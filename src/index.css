@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.paragraph-text {
+  @apply text-left text-blackCustom font-normal text-[16px] leading-[25.6px];
+}
+
+.header-text {
+  @apply text-left text-blackCustom font-medium text-[40px] leading-[56px];
+}
+  
+  
+  
+  
+  /* Apply the font globally */
+  body {
+    font-family: 'PP Neue Montreal', sans-serif;
+  }
