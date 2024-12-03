@@ -8,4 +8,4 @@ const SafetyEducationHero = () => {
     );
 };
 
-export default 
+export default SafetyEducationHero;
