@@ -11,7 +11,7 @@ const Navbar = () => {
             Cras vestibulum elementum tincidunt orci platea sit ac dui nunc.
           </p>
         </div>
-        <div className='flex justify-between px-[150px] py-[12px] items-center'>
+        <div className='flex bg-[#FBFCF5] justify-between px-[150px] py-[12px] items-center'>
         <NavLink to="/Homepage"><div><img src={logo} alt="logo" className='w-[140px] h-[55px]' /></div></NavLink>
           <div>
             <ul className='flex gap-8 text-base text-blackCustom leading-[22.4px] font-normal'>
