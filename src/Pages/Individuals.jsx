@@ -5,6 +5,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import IndividualsHero from '../Components/IndividualsPageComponents/IndividualsHero';
 import WhatYouCanDo from '../Components/IndividualsPageComponents/WhatYouCanDo';
+import ConsentStep from '../Components/IndividualsPageComponents/ConsentStep';
 
 
 const Individuals = () => {
@@ -13,6 +14,7 @@ const Individuals = () => {
         <Navbar />
         <IndividualsHero />
         <WhatYouCanDo />
+        <ConsentStep />
         <Footer />
         </div>
     );

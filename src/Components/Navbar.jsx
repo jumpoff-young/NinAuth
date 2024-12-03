@@ -12,13 +12,13 @@ const Navbar = () => {
           </p>
         </div>
         <div className='flex justify-between px-[150px] py-[12px] items-center'>
-          <div><img src={logo} alt="logo" className='w-[140px] h-[55px]' /></div>
+        <NavLink to="/Homepage"><div><img src={logo} alt="logo" className='w-[140px] h-[55px]' /></div></NavLink>
           <div>
             <ul className='flex gap-8 text-base text-blackCustom leading-[22.4px] font-normal'>
             <li><NavLink to="/Individuals">Individuals</NavLink></li>
-              <li>Businesses</li>
+            <li><NavLink to="/Businesses">Businesses</NavLink></li>
               <li>About NINAuth</li>
-              <li>Safety Education</li>
+              <li><NavLink to="/SafetyEducation">Safety Education</NavLink></li>
               <li>Developers</li>
             </ul>
           </div>

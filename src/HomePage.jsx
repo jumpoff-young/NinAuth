@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
 import Sectiontwo from './Components/Sectiontwo';
