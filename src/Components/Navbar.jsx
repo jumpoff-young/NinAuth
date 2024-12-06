@@ -22,10 +22,10 @@ const Navbar = () => {
               <li>Developers</li>
             </ul>
           </div>
-          <button href="#" className='py-[11.5px] px-[25.5px] border border-primaryColor
+          <NavLink to="/OnlineService"><button href="#" className='py-[11.5px] px-[25.5px] border border-primaryColor
            text-primaryColor font-medium text-[15px] leading-[21px] rounded-[4px]'>
             Explore online services
-            </button>
+            </button></NavLink>
         </div>
       </div>
     </>

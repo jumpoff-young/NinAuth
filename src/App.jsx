@@ -4,6 +4,7 @@ import HomePage from './HomePage';
 import Individuals from './Pages/Individuals';
 import Businesses from './Pages/Businesses';
 import SafetyEducation from './Pages/SafetyEducation';
+import OnlineService from './Pages/OnlineServices';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
        <Route path="/homepage" element={<HomePage />} />
        <Route path="/individuals" element={<Individuals />} />
        <Route path="/businesses" element={<Businesses />} /> 
-       <Route path="/SafetyEducation" element={<SafetyEducation />} />  
+       <Route path="/SafetyEducation" element={<SafetyEducation />} />
+       <Route path="/OnlineService" element={<OnlineService />} />  
     </Routes>
  </>
 
