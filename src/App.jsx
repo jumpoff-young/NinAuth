@@ -5,6 +5,8 @@ import Individuals from './Pages/Individuals';
 import Businesses from './Pages/Businesses';
 import SafetyEducation from './Pages/SafetyEducation';
 import OnlineService from './Pages/OnlineServices';
+import Developers from './Pages/Developers';
+
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
        <Route path="/individuals" element={<Individuals />} />
        <Route path="/businesses" element={<Businesses />} /> 
        <Route path="/SafetyEducation" element={<SafetyEducation />} />
-       <Route path="/OnlineService" element={<OnlineService />} />  
+       <Route path="/OnlineService" element={<OnlineService />} /> 
+       <Route path="/Developers" element={<Developers />} />  
     </Routes>
  </>
 

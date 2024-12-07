@@ -19,7 +19,7 @@ const Navbar = () => {
             <li><NavLink to="/Businesses">Businesses</NavLink></li>
               <li>About NINAuth</li>
               <li><NavLink to="/SafetyEducation">Safety Education</NavLink></li>
-              <li>Developers</li>
+              <li><NavLink to="/Developers">Developers</NavLink></li>
             </ul>
           </div>
           <NavLink to="/OnlineService"><button href="#" className='py-[11.5px] px-[25.5px] border border-primaryColor
