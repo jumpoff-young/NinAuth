@@ -1,5 +1,7 @@
 import React from 'react';
 import ButtonFill from '../ButtonFill';
+import { Routes, Route } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 
 const DevelopersHero = () => {
@@ -18,7 +20,7 @@ const DevelopersHero = () => {
                     </p>
                 </div>
 
-                <ButtonFill label="Read API documentation" />
+                <NavLink to="/ApiDoc"><ButtonFill label="Read API documentation" /></NavLink>
 
             </div>
         </div>

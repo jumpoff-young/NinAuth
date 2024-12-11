@@ -6,6 +6,7 @@ import Businesses from './Pages/Businesses';
 import SafetyEducation from './Pages/SafetyEducation';
 import OnlineService from './Pages/OnlineServices';
 import Developers from './Pages/Developers';
+import ApiDoc from './Pages/ApiDoc';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
        <Route path="/SafetyEducation" element={<SafetyEducation />} />
        <Route path="/OnlineService" element={<OnlineService />} /> 
        <Route path="/Developers" element={<Developers />} />  
+       <Route path="/ApiDoc" element={<ApiDoc />} />  
     </Routes>
  </>
 
