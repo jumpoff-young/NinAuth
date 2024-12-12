@@ -6,8 +6,8 @@ import DownloadLinks from './DownloadLinks';
 
 const DownloadApp = () => {
     return (
-        <div className='w-full py-[140px] m-auto'>
-            <div className='w-full max-w-[854px] m-auto flex flex-col-reverse lg:flex lg:flex-row justify-between items-center'>
+        <div className='w-full px-4 py-[140px] m-auto'>
+            <div className='w-full lg:max-w-[854px] m-auto flex flex-col-reverse lg:flex lg:flex-row justify-between items-center'>
                 <div className='w-full max-w-[377px] h-full max-h-[571px]'>
                     <img src={PhoneMockup} className='w-full h-full object-contain' />
                 </div>

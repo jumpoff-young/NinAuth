@@ -12,7 +12,7 @@ const Benefits = () => {
 
     return (
         <div className="w-full pt-[98px] pb-[144px] bg-[#F9F5EB] px-4 sm:px-8">
-            <div className="max-w-[1212px] mx-auto flex flex-col gap-12">
+            <div className="lg:max-w-[1212px] mx-auto flex flex-col gap-12">
                 <h1 className="text-center text-blackCustom font-medium text-[28px] sm:text-[32px] lg:text-[40px] leading-tight lg:leading-[56px]">
                     Your identity. Your data.
                 </h1>

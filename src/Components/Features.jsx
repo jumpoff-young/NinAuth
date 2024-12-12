@@ -10,7 +10,7 @@ import Firs from '../assets/images/features/icons/firs.png';
 const Features = () => {
     return (
         <div className="w-full py-[64px] sm:py-[112px] px-4 sm:px-8">
-            <div className="w-full max-w-[1212px] mx-auto flex flex-col gap-12 sm:gap-[64px]">
+            <div className="w-full lg:max-w-[1212px] mx-auto flex flex-col gap-12 sm:gap-[64px]">
                 {/* Header Section */}
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12">
                     <h1 className="header-text text-[24px] sm:text-[32px] lg:text-[40px] w-full max-w-[514px] leading-tight">

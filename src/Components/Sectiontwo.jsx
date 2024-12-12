@@ -4,7 +4,7 @@ import SectiontwoImage from '../assets/images/sectiontwo-image.png';
 const Sectiontwo = () => {
     return (
         <div className="w-full px-4 sm:px-8 lg:px-0">
-            <div className="flex flex-col-reverse lg:flex-row w-full max-w-[1096px] mx-auto justify-between items-center gap-8 lg:gap-12">
+            <div className="flex flex-col-reverse lg:flex-row w-full lg:max-w-[1096px] mx-auto justify-between items-center gap-8 lg:gap-12">
                 {/* Image Section */}
                 <img
                     src={SectiontwoImage}

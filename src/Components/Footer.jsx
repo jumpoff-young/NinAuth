@@ -4,7 +4,7 @@ import NinAuthLogo from '../assets/images/Footer/NINAuthLogo.png';
 const Footer = () => {
     return (
         <div className='w-full bg-[#083C2F] h-[267px] px-4 py-10 lg:px-0 m-auto flex items-center'>
-            <div className='w-full max-w-[1212px] m-auto flex flex-col gap-6 lg:flex lg:flex-row lg:justify-between'>
+            <div className='w-full lg:max-w-[1212px] m-auto flex flex-col gap-6 lg:flex lg:flex-row lg:justify-between'>
                 <div>
                     <img src={NinAuthLogo} className='w-[140px] h-auto' />
                 </div>

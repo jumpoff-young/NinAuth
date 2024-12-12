@@ -16,8 +16,8 @@ const AuthenticationMethodsSection = () => {
     ];
 
     return (
-        <div className="w-full py-[98px] bg-[#F5F1E8]">
-            <div className="w-full max-w-[1212px] m-auto flex flex-col items-center">
+        <div className="w-full px-4 py-[98px] bg-[#F5F1E8]">
+            <div className="w-full lg:max-w-[1212px] m-auto flex flex-col items-center">
                 <div className="flex flex-col gap-[61px]">
                     <div className="Header-Text flex flex-col gap-4">
                         <h3 className="text-center font-medium text-blackCustom leading-[56px] text-[40px]">
