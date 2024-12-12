@@ -1,5 +1,5 @@
 import React from 'react';
-import serviceImage from '../assets/images/features/serviceImage.png';
+import serviceImage from '../assets/images/features/ServiceImage.png';
 import image2 from '../assets/images/features/Image2.png';
 import FeaturesCards from './FeaturesCards';
 import Immigration from '../assets/images/features/icons/immigration.png';
