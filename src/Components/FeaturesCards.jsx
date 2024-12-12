@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const FeaturesCards = ({ icon, title, actions, buttonLabel, textColor }) => {
+const FeaturesCards = ({ icon, title, actions, buttonLabel, textColor, justifyBetween }) => {
   return (
     <>
 
@@ -12,14 +12,14 @@ const FeaturesCards = ({ icon, title, actions, buttonLabel, textColor }) => {
         </div>
 
 
-        <div className="flex flex-col justify-between h-full  ">
+        <div className={`flex flex-col gap-[32px] lg:justify-between h-full ${justifyBetween ? justifyBetween : "justify-between"}  `}>
           <div className="flex flex-col gap-4">
             <h3 className={`text-2xl leading-[33.6px] font-medium text-blackCustom w-full max-w-[297px] text-left ${textColor ? textColor : "text-blackCustom"
               } `}>{title}</h3>
             <ul className="list-disc pl-5 flex flex-col gap-[10px]">
               {actions.map((action, index) => (
                 <li key={index} className={`text-blackCustom text-[15px] font-normal leading-[24px] w-full max-w-[297px] ${textColor ? textColor : "text-blackCustom"
-              }`}>
+                  }`}>
                   {action}
                 </li>
               ))}
