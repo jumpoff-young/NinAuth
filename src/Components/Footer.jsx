@@ -8,7 +8,7 @@ const Footer = () => {
                 <div>
                     <img src={NinAuthLogo} className='w-[140px] h-auto' />
                 </div>
-                <div className='flex flex-col w-[930px] gap-[24px]'>
+                <div className='flex flex-col lg:w-[930px] gap-[24px]'>
                     <ul className='flex gap-8 text-white text-base underline text-center'>
                         <li>Privacy Policy</li>
                         <li>Terms of Use</li>

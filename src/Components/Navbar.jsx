@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from '../assets/logo/ninauth-logo.png';
-import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import { HiMenuAlt3, HiX } from 'react-icons/hi';  // For the hamburger icon and close icon
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the menu
 
   const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen); // Toggle the menu state
   };
 
   return (
@@ -21,42 +21,35 @@ const Navbar = () => {
         <div className='flex justify-between px-[20px] py-[12px] items-center bg-[#FBFCF5]'>
           {/* Logo */}
           <NavLink to="/Homepage">
-            <div>
-              <img src={logo} alt="logo" className='w-[140px] h-[55px]' />
-            </div>
+            <div><img src={logo} alt="logo" className='w-[140px] h-[55px]' /></div>
           </NavLink>
 
-          {/* Hamburger Menu Toggle Button */}
-          <button
-            className="lg:hidden focus:outline-none"
-            onClick={handleMenuToggle}
-            aria-label="Toggle navigation menu"
-          >
-            {isMenuOpen ? (
-              <HiX className="text-3xl text-blackCustom" />
-            ) : (
-              <HiMenuAlt3 className="text-3xl text-blackCustom" />
-            )}
-          </button>
+          {/* Hamburger Menu for Mobile */}
+          <div className="lg:hidden" onClick={handleMenuToggle}>
+            <HiMenuAlt3 className="text-3xl text-blackCustom" />
+          </div>
 
-          {/* Navbar Links */}
-          <div
-            className={`lg:static bg-[#FBFCF5] lg:bg-transparent top-[60px] left-0 w-full lg:w-auto flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-8 text-base text-blackCustom leading-[22.4px] font-normal
-              ${isMenuOpen ? 'block' : 'hidden'} lg:flex`}
-          >
-            <ul className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+          {/* Navbar Links (Desktop and Tablet) */}
+          <div className={`lg:flex flex-grow items-center gap-8 text-base text-blackCustom leading-[22.4px] font-normal ${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
+            <ul className={`flex flex-col lg:flex-row gap-6 transition-all duration-500 ease-in-out transform ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
               <li><NavLink to="/Individuals">Individuals</NavLink></li>
               <li><NavLink to="/Businesses">Businesses</NavLink></li>
               <li>About NINAuth</li>
               <li><NavLink to="/SafetyEducation">Safety Education</NavLink></li>
               <li><NavLink to="/Developers">Developers</NavLink></li>
             </ul>
-            {/* Explore Button */}
-            <NavLink to="/OnlineService">
-              <button className='py-[11.5px] px-[25.5px] border border-primaryColor text-primaryColor font-medium text-[15px] leading-[21px] rounded-[4px]'>
-                Explore online services
-              </button>
-            </NavLink>
+          </div>
+
+          {/* Explore Button (Desktop and Tablet) */}
+          <NavLink to="/OnlineService">
+            <button className='py-[11.5px] px-[25.5px] border border-primaryColor text-primaryColor font-medium text-[15px] leading-[21px] rounded-[4px]'>
+              Explore online services
+            </button>
+          </NavLink>
+
+          {/* Close Menu for Mobile */}
+          <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'}`} onClick={handleMenuToggle}>
+            <HiX className="text-3xl text-blackCustom" />
           </div>
         </div>
       </div>
