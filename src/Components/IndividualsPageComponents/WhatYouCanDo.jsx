@@ -4,9 +4,11 @@ import Image2 from '../../assets/images/Individuals/Image 2.png';
 const WhatYouCanDo = () => {
     return (
         <div className='w-full m-auto py-[112px]'>
-            <div className='w-full max-w-[1212px] m-auto flex flex-col items-center gap-12'>
-                <h1 className='text-[40px] leading[56px] text-blackCustom text-center font-medium'>What you can do with NINAuth</h1>
-                <div className='flex gap-[97px] items-center'>
+            <div className='w-full px-6 lg:max-w-[1212px] md:max-w-[1212px] m-auto flex flex-col items-center gap-12'>
+                <h1 className='text-[34px] sm:text-[34px] lg:text-[40px] md:text-[40px] 
+                leading[47.6px] sm:leading[47.6px] md:leading[56px] lg:leading[56px] text-blackCustom text-center font-medium'>
+                    What you can do with NINAuth</h1>
+                <div className='flex flex-col sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row gap-[97px] items-center'>
                     <div className='w-full max-w-[580px] h-auto relative'>
                         <img src={Image2} object-cover />
                     </div>

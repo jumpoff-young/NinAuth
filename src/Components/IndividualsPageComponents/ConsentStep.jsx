@@ -42,12 +42,16 @@ const ConsentStep = () => {
   ];
 
   return (
-    <div className="steps-container w-full m-auto py-[96px]  flex flex-col gap-[140px]">
+    <div className="steps-container px-6 w-full m-auto py-[96px]  flex flex-col lg:gap-[140px]">
       {TheSteps.map((TheStep, index) => (
-        <div key={index} className={`step-card items-center flex w-[867px] justify-between m-auto ${index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'}`}>
+        <div key={index} className={`step-card items-start lg:items-center md:items-center flex flex-col sm:flex-col lg:flex-row md:flex-row w-[389px] sm:w-[389px] md:w-[867px] lg:w-[867px] justify-between m-auto ${index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'}`}>
           <div className='flex flex-col gap-[56px]'>
-            <h1 className="step-heading font-medium text-blackCustom text-[40px] leading-[56px] w-[523px]">{TheStep.heading}</h1>
-            <div className="features-list flex flex-col gap-[24px] max-w-[523px]">
+            <h1 className="step-heading font-medium text-blackCustom text-[34px] sm:text-[34px] md:text-[40px] lg:text-[40px] 
+                           leading-[47.6px] sm:leading-[47.6px] md:leading-[56px] lg:leading-[56px] 
+                           w-[398px] sm:w-[398px] md:w-[523px] lg:w-[523px]">
+              {TheStep.heading}
+            </h1>
+            <div className="features-list flex flex-col gap-[24px] max-w-[398px] sm:max-w-[398px] md:max-w-[523px] lg:max-w-[523px]">
               {TheStep.features.map((feature, featureIndex) => (
                 <div key={featureIndex} className="feature-item flex items-center gap-4">
                   <div className='w-full max-w-[64px] h-full max-h-[64px] p-x[14px] py-[14.5px] rounded-[10px] bg-[#F9F5EB] flex items-center justify-center'>
