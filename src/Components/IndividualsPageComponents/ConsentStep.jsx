@@ -54,8 +54,8 @@ const ConsentStep = () => {
             <div className="features-list flex flex-col gap-[24px] max-w-[398px] sm:max-w-[398px] md:max-w-[523px] lg:max-w-[523px]">
               {TheStep.features.map((feature, featureIndex) => (
                 <div key={featureIndex} className="feature-item flex items-center gap-4">
-                  <div className='w-full max-w-[64px] h-full max-h-[64px] p-x[14px] py-[14.5px] rounded-[10px] bg-[#F9F5EB] flex items-center justify-center'>
-                    <img src={feature.icon} alt="Feature Icon" className="feature-icon w-9 h-9" />
+                  <div className='w-full max-w-[64px] h-full object-contain max-h-[64px] p-x[14px] py-[14.5px] rounded-[10px] bg-[#F9F5EB] flex items-center justify-center'>
+                    <img src={feature.icon} alt="Feature Icon" className="feature-icon w-9 h-9 object-contain" />
                   </div>
                   <p className="feature-text uppercase font-normal text-[17px] leading-[27.2px] tracking-widest ">{feature.text}</p>
                 </div>

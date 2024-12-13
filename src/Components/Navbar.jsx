@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-col gap-0">
+    <div className="w-screen flex flex-col gap-0 items-center m-auto bg-[#FBFCF5]">
       {/* Announcement Bar */}
       <div className="w-full bg-[#083C2F] py-[13.5px]">
         <p className="text-white text-center font-montreal font-medium leading-[21px] text-[15px]">
@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <div className="flex justify-between px-[20px] py-[12px] items-center lg:items-center md:items-center bg-[#FBFCF5]">
+      <div className="flex w-full max-w-[84.17%]  justify-between  py-[12px] items-start lg:items-center md:items-center bg-[#FBFCF5]">
         {/* Logo */}
         <NavLink to="/Homepage">
           <img src={logo} alt="logo" className="w-[140px] h-[55px]" />

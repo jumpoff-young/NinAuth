@@ -3,11 +3,11 @@ import React from 'react';
 const Testing = () => {
     return (
         <div className='w-full flex flex-col gap-16  pb-[112px]'>
-            <div className='w-[942px]'>
-                <div className='w-full flex flex-col gap-16'>
-                    <div className='flex flex-col gap-10'>
-                        <div className='title w-full'>
-                            <h1 className='text-[32px] leading-[44.8px] font-medium '>
+            <div className='w-full max-w-full lg:w-[942px]'>
+                <div className='w-full max-w-full flex flex-col gap-16'>
+                    <div className='flex flex-col gap-10 w-full max-w-full'>
+                        <div className='title w-full max-w-full'>
+                            <h1 className=' w-full max-w-full text-[32px] leading-[44.8px] font-medium '>
                                 Testing
                             </h1>
                         </div>
@@ -16,7 +16,7 @@ const Testing = () => {
 
 
                     </div>
-                    <div className='flex flex-col gap-10'>
+                    <div className='w-full max-w-full flex flex-col gap-10'>
 
 
                         <div className='flex flex-col gap-10'>

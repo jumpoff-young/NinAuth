@@ -2,8 +2,8 @@ import React from 'react';
 
 const IntroductionContent = () => {
     return (
-        <div className='w-full flex flex-col gap-16  pb-[112px]'>
-            <div className='w-[942px]'>
+        <div className='w-full max-w-full flex flex-col gap-16  pb-[112px]'>
+            <div className='w-full max-w-full  lg:w-[942px]'>
                 <div className='w-full flex flex-col gap-16'>
                     <div className='flex flex-col gap-10'>
                         <div className='title w-full'>
@@ -11,8 +11,8 @@ const IntroductionContent = () => {
                                 Introduction
                             </h1>
                         </div>
-                        <div className='body flex flex-col w-full gap-6'>
-                            <p className='text-[17px] text-[#343434] font-normal text-justify w-full '>
+                        <div className='body flex flex-col w-full max-w-full gap-6'>
+                            <p className='text-[17px] text-[#343434] font-normal text-justify w-full max-w-full '>
                                 This document serves as a guide for businesses and government
                                 entities to seamlessly integrate Ninauth’s verification
                                 system into their digital infrastructure. The system simplifies user authentication,

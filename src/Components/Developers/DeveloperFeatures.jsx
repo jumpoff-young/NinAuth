@@ -25,7 +25,7 @@ const DeveloperFeatures = () =>{
                     </h2>
                     <div className="flex flex-wrap gap-8 items-center w-full m-auto">
                         {DeveloperCards.map(DeveloperCard => (
-                            <div key={DeveloperCard.id} className="flex flex-col gap-8 bg-[#F9F5EB] w-[279px] h-full p-6 rounded-2xl">
+                            <div key={DeveloperCard.id} className="flex flex-col gap-8 bg-[#F9F5EB] w-full max-w-screen md:w-[279px] lg:w-[279px] h-full p-6 rounded-2xl">
                                 <div>
                                     <img src={DeveloperCard.icon} alt={DeveloperCard.title} className='w-auto max-w-[79px] h-auto' />
                                 </div>

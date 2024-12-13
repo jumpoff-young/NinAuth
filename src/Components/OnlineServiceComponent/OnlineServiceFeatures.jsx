@@ -9,8 +9,8 @@ import FctIrs from '../../assets/images/OnlineServices/FctIrs.png';
 
 const OnlineServiceFeatures = () => {
     return (
-        <div className='w-full py-[112px] m-auto bg-[#F9F5EB]'>
-            <div className='w-full m-auto max-w-[1084px] flex flex-wrap gap-6'>
+        <div className='w-screen px-6 flex items-center py-[112px] m-auto bg-[#F9F5EB]'>
+            <div className='w-full max-w-screen m-auto lg:max-w-[1084px] flex flex-wrap justify-center  gap-6'>
                 <OnlineServiceCards
 
                     icon={Immigration}
