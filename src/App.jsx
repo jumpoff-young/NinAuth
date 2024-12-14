@@ -9,6 +9,8 @@ import Developers from './Pages/Developers';
 import ApiDoc from './Pages/ApiDoc';
 import Cookies from './Pages/Cookies';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsOfService from './Pages/TermsOfService';
+import ContactUs from './Pages/ContactUs';
 
 
 
@@ -26,6 +28,8 @@ function App() {
         <Route path="/ApiDoc" element={<ApiDoc />} />
         <Route path="/Cookies" element={<Cookies />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/TermsOfService" element={<TermsOfService />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
     </>
 

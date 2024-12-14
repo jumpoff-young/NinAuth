@@ -4,16 +4,16 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className='w-full bg-[#083C2F] h-[267px] px-4 py-10 lg:px-0 m-auto flex items-center'>
+        <div className='w-full bg-[#083C2F] lg:h-[267px] md:h-[267px] px-4 py-10 lg:px-0 m-auto flex items-center'>
             <div className='w-full lg:max-w-[1212px] m-auto flex flex-col gap-6 lg:flex lg:flex-row lg:justify-between'>
                 <div>
                     <img src={NinAuthLogo} className='w-[140px] h-auto' />
                 </div>
                 <div className='flex flex-col lg:w-[930px] gap-[24px]'>
-                    <ul className='flex gap-8 text-white text-base underline text-center'>
+                    <ul className='flex flex-wrap w-full max-w-full gap-8 text-white text-base underline text-center'>
                     <NavLink to="/PrivacyPolicy"><li>Privacy Policy</li></NavLink>
-                        <li>Terms of Use</li>
-                        <li>Contact us</li>
+                    <NavLink to="/TermsOfService"><li>Terms of Use</li></NavLink>
+                    <NavLink to="/ContactUs"> <li>Contact us</li></NavLink>
                        <NavLink to="/Cookies"><li>Cookies</li></NavLink>
                     </ul>
                     <div className='flex flex-col gap-4'>
