@@ -3,6 +3,10 @@ import ImportanceIcon1 from '../../assets/images/SafetyEducation/ImportanceIcon1
 import ImportanceIcon2 from '../../assets/images/SafetyEducation/ImportanceIcon2.png';
 import ImportanceIcon3 from '../../assets/images/SafetyEducation/ImportanceIcon3.png';
 import ImportanceIcon4 from '../../assets/images/SafetyEducation/ImportanceIcon4.png';
+import TipsIcon1 from '../../assets/images/SafetyEducation/TipsIcon1.png';
+import TipsIcon2 from '../../assets/images/SafetyEducation/TipsIcon2.png';
+import TipsIcon3 from '../../assets/images/SafetyEducation/TipsIcon3.png';
+import TipsIcon4 from '../../assets/images/SafetyEducation/TipsIcon4.png';
 
 const SafetyEducationTabs = () => {
     const [activeTab, setActiveTab] = useState("importance");
@@ -101,7 +105,7 @@ const SafetyEducationTabs = () => {
                 </div>
                 <div className='tips-points flex flex-col items-center gap-[58px] px-4 w-full max-w-full lg:w-[56.74%] m-auto'>
                     <div className='tips-points-one flex flex-col w-full lg:flex-row md:flex-row gap-[33px] pb-8 border-b-[1px] border-[#E1E1D8]'>
-                        <div className='tips-icon-one max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'></div>
+                        <div className='tips-icon-one max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'><img src={TipsIcon1} /></div>
                         <div className='tips-content-one w-full'>
                             <h5 className='w-full text-blackCustom text-[22px] leading-[39.6px] font-medium'>Prevention of Fraud and Identity Theft</h5>
                             <p className='w-full max-w-full lg:w-[572px] text-blackCustom leading-[30.6px] text-[17px] font-normal'>
@@ -114,7 +118,7 @@ const SafetyEducationTabs = () => {
                         </div>
                     </div>
                     <div className='tips--points-two flex flex-col w-full lg:flex-row md:flex-row gap-[33px] pb-8 border-b-[1px] border-[#E1E1D8]'>
-                        <div className='tips-icon-two max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'></div>
+                        <div className='tips-icon-two max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'><img src={TipsIcon2} /></div>
                         <div className='tips-content-two w-full'>
                             <h5 className='w-full text-blackCustom text-[22px] leading-[39.6px] font-medium'>Prevention of Fraud and Identity Theft</h5>
                             <p className='w-full max-w-full text-blackCustom leading-[30.6px] text-[17px] font-normal'>
@@ -127,7 +131,7 @@ const SafetyEducationTabs = () => {
                         </div>
                     </div>
                     <div className='tips-points-three flex flex-col w-full lg:flex-row md:flex-row gap-[33px] pb-8 border-b-[1px] border-[#E1E1D8]'>
-                        <div className='tips-icon-three icon-two max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'></div>
+                        <div className='tips-icon-three icon-two max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'><img src={TipsIcon3} /></div>
                         <div className='tips-content-three w-full'>
                             <h5 className='w-full text-blackCustom text-[22px] leading-[39.6px] font-medium'>Prevention of Fraud and Identity Theft</h5>
                             <p className='w-full max-w-full text-blackCustom leading-[30.6px] text-[17px] font-normal'>
@@ -140,7 +144,7 @@ const SafetyEducationTabs = () => {
                         </div>
                     </div>
                     <div className='tips-points-four flex flex-col w-full lg:flex-row md:flex-row gap-[33px] pb-8 border-b-[1px] border-[#E1E1D8]'>
-                        <div className='tips-icon-four max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'></div>
+                        <div className='tips-icon-four max-w-[112px] max-h-[112px] object-contain p-6 bg-[#F9F5EB] rounded-[10px]'><img src={TipsIcon4} /></div>
                         <div className='tips-content-four w-full'>
                             <h5 className='w-full text-blackCustom text-[22px] leading-[39.6px] font-medium'>Prevention of Fraud and Identity Theft</h5>
                             <p className='w-full text-blackCustom leading-[30.6px] text-[17px] font-normal'>
