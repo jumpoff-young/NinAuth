@@ -1,5 +1,6 @@
 import React from 'react';
 import NinAuthLogo from '../assets/images/Footer/NINAuthLogo.png';
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -10,9 +11,10 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col lg:w-[930px] gap-[24px]'>
                     <ul className='flex gap-8 text-white text-base underline text-center'>
-                        <li>Privacy Policy</li>
+                    <NavLink to="/PrivacyPolicy"><li>Privacy Policy</li></NavLink>
                         <li>Terms of Use</li>
                         <li>Contact us</li>
+                       <NavLink to="/Cookies"><li>Cookies</li></NavLink>
                     </ul>
                     <div className='flex flex-col gap-4'>
                         <p className='text-white text-[15px] leading-[21px] w-full max-w-[358px] lg:max-w-full '>

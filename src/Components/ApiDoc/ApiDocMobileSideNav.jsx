@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom'; // Import NavLink for navigation
 import { HiMenuAlt3, HiX } from 'react-icons/hi'; // Hamburger and close icons
 
-
-const ApiDocMobileSideNav = ({ activeSection, setActiveSection }) => {
+const ApiDocMobileSideNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling menu
-  const items = ['Introduction', 'App Integrations', 'Environment', 'Resources', 'Testing'];
+
+  // Menu items and corresponding routes
+  const items = [
+    { name: 'Introduction', route: '/introduction' },
+    { name: 'App Integrations', route: '/app-integrations' },
+    { name: 'Environment', route: '/environment' },
+    { name: 'Resources', route: '/resources' },
+    { name: 'Testing', route: '/testing' },
+  ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -26,19 +34,19 @@ const ApiDocMobileSideNav = ({ activeSection, setActiveSection }) => {
         } w-[300px] border-r border-[#E1E1D8]`}
       >
         <div className="w-full flex flex-col gap-[20px] p-[16px] pb-[112px]">
-          {items.map((item) => (
-            <div
-              key={item}
-              className={`w-full px-3 py-[6px] rounded-[8px] cursor-pointer ${
-                activeSection === item ? 'bg-[#F9F5EB] text-[#111111]' : 'text-blackCustom'
-              }`}
-              onClick={() => {
-                setActiveSection(item);
-                toggleMenu(); // Close menu after selecting
-              }}
+          {items.map(({ name, route }) => (
+            <NavLink
+              key={name}
+              to={route} // Use NavLink's `to` prop for navigation
+              className={({ isActive }) =>
+                `w-full px-3 py-[6px] rounded-[8px] cursor-pointer ${
+                  isActive ? 'bg-[#F9F5EB] text-[#111111]' : 'text-blackCustom'
+                }`
+              }
+              onClick={toggleMenu} // Close menu after selecting
             >
-              {item}
-            </div>
+              {name}
+            </NavLink>
           ))}
         </div>
       </div>
