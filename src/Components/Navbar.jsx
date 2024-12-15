@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex w-full max-w-[84.17%]  justify-between  py-[12px] items-start lg:items-center md:items-center bg-[#FBFCF5]">
         {/* Logo */}
         <NavLink to="/Homepage">
-          <img src={logo} alt="logo" className="w-[140px] h-[55px]" />
+          <img src={logo} alt="logo" className="w-[140px] h-auto" />
         </NavLink>
         <div className="flex flex-col gap-8 items-end">
           {/* Hamburger Menu (Mobile) */}
