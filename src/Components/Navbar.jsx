@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <div className="flex w-full max-w-[84.17%]  justify-between  py-[12px] items-start lg:items-center md:items-center bg-[#FBFCF5]">
+      <div className="flex w-full px-6 lg:max-w-[84.17%]  justify-between  py-[12px] items-start lg:items-center md:items-center bg-[#FBFCF5]">
         {/* Logo */}
         <NavLink to="/Homepage">
           <img src={logo} alt="logo" className="w-[140px] h-auto" />

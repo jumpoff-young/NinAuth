@@ -5,7 +5,7 @@ import heroImage from '../assets/images/hero-image.png';
 const HeroSection = () => {
     return (
         <div className="w-full px-4 sm:px-8 lg:px-0">
-            <div className=" lg:max-w-[1212px] mx-auto flex flex-col lg:flex-row justify-between items-center">
+            <div className=" lg:max-w-[84.17%] mx-auto flex flex-col lg:flex-row justify-between items-center">
                 {/* Text Section */}
                 <div className="flex flex-col gap-8 text-center lg:text-left lg:gap-12">
                     <div className="flex flex-col gap-4 lg:gap-6">
