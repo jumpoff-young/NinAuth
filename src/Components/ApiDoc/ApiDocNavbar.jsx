@@ -23,7 +23,7 @@ const ApiDocNavbar = () => {
                         <div className="lg:block hidden">
                             {/* Logo visible on larger screens */}
                             <NavLink to="/Homepage">
-                                <img src={logo} alt="logo" className="w-[140px] h-[55px]" />
+                                <img src={logo} alt="logo" className="w-[140px] h-auto" />
                             </NavLink>
                         </div>
                         <div className="lg:hidden absolute">

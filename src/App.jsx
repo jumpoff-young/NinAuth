@@ -31,6 +31,7 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/TermsOfService" element={<TermsOfService />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/" element={<LogIn />} />
         <Route path="/LogIn" element={<LogIn />} />
       </Routes>
     </>

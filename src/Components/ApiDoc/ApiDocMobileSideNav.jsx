@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'; // Import NavLink for navigation
-import { HiMenuAlt3, HiX } from 'react-icons/hi'; // Hamburger and close icons
+import { HiMenuAlt3, HiX } from 'react-icons/hi'; 
+import ApiDocBody from './ApiDocBody';// Hamburger and close icons
 
 const ApiDocMobileSideNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling menu

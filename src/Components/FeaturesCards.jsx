@@ -28,7 +28,7 @@ const FeaturesCards = ({ icon, title, actions, buttonLabel, textColor, justifyBe
             </ul>
           </div>
           <div className="text-center w-full">
-            <NavLink to="./LogIn"><button
+            <NavLink to="/LogIn"><button
               className="p-4 bg-white text-primaryColor text-[15px] font-medium text-center w-full max-w-[297px] 
               h-auto max-h-[40px] flex items-center justify-center rounded">
               {buttonLabel}

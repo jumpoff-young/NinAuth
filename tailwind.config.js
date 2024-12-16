@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        montreal: ['PP Neue Montreal', 'sans-serif'], // Adding the Roboto font
+        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
       colors:{
         'blackCustom':'#111111',
