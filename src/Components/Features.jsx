@@ -25,9 +25,9 @@ const Features = () => {
                 </div>
 
                 {/* Features Section */}
-                <div className="flex flex-col lg:flex-row gap-6">
+                <div className="features-card-main-con flex flex-col h-full lg:flex-row gap-6">
                     {/* Left Column */}
-                    <div className="flex flex-col gap-6 w-full lg:w-[65%]">
+                    <div className="flex flex-col gap-6 w-full h-full lg:w-[65%]">
                         {/* Top Row */}
                         <div className="flex flex-col sm:flex-row gap-6">
                             <div className="bg-[#D8FF85] flex-grow flex flex-col px-4 py-6 rounded-2xl">
@@ -75,7 +75,7 @@ const Features = () => {
 
                     {/* Right Column */}
                     <div
-                        className="w-full lg:w-[35%] h-[560px] sm:h-[400px] lg:h-[892px] bg-cover bg-center px-7 py-16 rounded-2xl"
+                        className="w-full lg:w-[35%] h-[560px] sm:h-[400px] lg:h-[866.2px] bg-cover bg-center px-7 py-16 rounded-2xl"
                         style={{ 
                             backgroundImage: `linear-gradient(to bottom, rgba(0, 38, 39, 1), rgba(0, 86, 88, 0.05), rgba(0, 0, 0, 1)), url(${serviceImage})`
                         }}

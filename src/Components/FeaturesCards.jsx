@@ -1,4 +1,6 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 
 const FeaturesCards = ({ icon, title, actions, buttonLabel, textColor, justifyBetween }) => {
@@ -26,11 +28,11 @@ const FeaturesCards = ({ icon, title, actions, buttonLabel, textColor, justifyBe
             </ul>
           </div>
           <div className="text-center w-full">
-            <button
+            <NavLink to="./LogIn"><button
               className="p-4 bg-white text-primaryColor text-[15px] font-medium text-center w-full max-w-[297px] 
               h-auto max-h-[40px] flex items-center justify-center rounded">
               {buttonLabel}
-            </button>
+            </button></NavLink>
           </div>
         </div>
       </div>

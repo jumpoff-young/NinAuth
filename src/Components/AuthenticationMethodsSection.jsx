@@ -32,7 +32,7 @@ const AuthenticationMethodsSection = () => {
 
                 {/* Cards Container */}
                 <div className='GradientandImage flex w-full justify-between lg:flex-col lg:gap-[60px] pt-[64px] md:flex-col md:gap-[60px] '>
-                    <div className="Gradient ml-[16px] h-[1000px] w-[5px] lg:h-1 bg-gradient-to-r from-[#F46A69] via-[#F5B829] via-[#CCF529] to-[#008643] lg:w-[1212px] rounded"></div>
+                    <div className="Gradient ml-[16px] h-[1000px] w-[5px] lg:h-1 bg-gradient-to-b lg:bg-gradient-to-r from-[#F46A69] via-[#F5B829] via-[#CCF529] to-[#008643] lg:w-[1212px] rounded"></div>
                     <div className="Cards-Main-Container w-full flex flex-col justify-between gap-6 lg:flex lg:flex-row lg:justify-center  ">
                         {AuthStrengthCards.map((AuthStrengthCard) => (
                             <div

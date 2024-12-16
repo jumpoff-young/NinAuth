@@ -11,6 +11,7 @@ import Cookies from './Pages/Cookies';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsOfService from './Pages/TermsOfService';
 import ContactUs from './Pages/ContactUs';
+import LogIn from './Pages/LogIn';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/TermsOfService" element={<TermsOfService />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/LogIn" element={<LogIn />} />
       </Routes>
     </>
 
