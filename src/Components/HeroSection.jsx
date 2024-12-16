@@ -27,7 +27,7 @@ const HeroSection = () => {
                 {/* Text Section */}
                 <div className="flex flex-col gap-8 text-center lg:text-left lg:gap-12">
                     <div className="flex flex-col gap-4 lg:gap-6 lg:max-w-[639px]">
-                        <h1 className="text-[32px] text-left sm:text-[42px] sm:leading-[50.4px] sm:max-w-[396px] sm:text-left lg:text-[48px] lg:leading-[60px] lg:text-left lg:max-w-[600px] font-medium leading-[50.4px] max-w-full">
+                        <h1 className="text-[32px] text-left sm:text-[42px] sm:leading-[50.4px] sm:max-w-[396px] sm:text-left lg:text-[48px] lg:leading-[60px] lg:text-left lg:max-w-[660px] font-medium leading-[50.4px] max-w-full">
                             Take charge of your privacy with outperforming authentication
                         </h1>
                         <p className="w-full max-w-full text-[17px] leading-[27.2px] font-normal lg:max-w-[639px] text-left sm:text-[17px]">
